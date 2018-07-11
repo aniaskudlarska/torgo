@@ -1,0 +1,19 @@
+@torgo.command()
+async def flamingtext(arg1, *args):
+	query = arg1
+	for arg in args:
+		query += (" " + arg)
+	print(query)
+	browser = RoboBrowser()
+	browser.open('https://cooltext.com/Logo-Design-Burning')
+	form = browser.get_form(action='Edit-Logo')
+	form['Text'].value = query
+	browser.submit_form(form)
+	images = browser.find_all('img')
+	for image in images:
+		print(image)
+		if (image[-3:] == "gif"):
+			await torgo.say(image)
+		else:
+			pass
+	

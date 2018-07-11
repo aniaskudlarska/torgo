@@ -1,0 +1,8 @@
+BEFORE RUNNING, THIS BOT REQUIRES...
+
+- Discord.py
+- Python 3.6.0 or higher
+- Pillow 4.1.1 (4.2.0 will break the robot)
+- Profanity
+- BeautifulSoup, Requests, /and/ RoboBrowser 
+(this will be changed to only include the former two or just the latter)
